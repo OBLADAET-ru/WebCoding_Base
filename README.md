@@ -2,10 +2,17 @@
 
 > Структурированный справочник по веб-разработке: от вёрстки и дизайна до серверов и безопасности.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+[![Сайт](https://img.shields.io/badge/🌐_Живой_сайт-Открыть-0033ff?style=for-the-badge)](https://obladaet-ru.github.io/WebCoding_Base/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/ru/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+
+---
+
+## 🔗 Живая демо-версия
+
+Сайт доступен по адресу: **https://obladaet-ru.github.io/WebCoding_Base/**
 
 ---
 
@@ -59,18 +66,17 @@
 
 ```bash
 # Клонируйте репозиторий
-git clone https://github.com/OBLADAET-ru/webcode-art.git
+git clone https://github.com/OBLADAET-ru/WebCoding_Base.git
 
 # Перейдите в папку проекта
-cd webcode-art
+cd WebCoding_Base
 
 # Откройте index.html в браузере
 # (или используйте Live Server в VS Code)
-```
 
-### Вариант 2: Локальный сервер (рекомендуется)
+Вариант 2: Локальный сервер (рекомендуется)
+bash
 
-```bash
 # Python 3
 python -m http.server 8000
 
@@ -78,60 +84,54 @@ python -m http.server 8000
 npx http-server
 
 # Откройте http://localhost:8000
-```
 
----
+🛠 Технологии
 
-## 🛠 Технологии
+Проект намеренно написан на чистом HTML, CSS и JavaScript — без сборщиков, фреймворков и зависимостей. Это делает его:
 
-Проект намеренно написан на **чистом HTML, CSS и JavaScript** — без сборщиков, фреймворков и зависимостей. Это делает его:
+    ⚡ Быстрым — загружается мгновенно
 
-- ⚡ **Быстрым** — загружается мгновенно
-- 🪶 **Лёгким** — один файл, никаких `node_modules`
-- 🎓 **Обучающим** — можно читать исходный код и учиться
-- 🔧 **Простым в поддержке** — не нужно обновлять зависимости
+    🪶 Лёгким — один файл, никаких node_modules
 
-| Технология | Назначение |
-|-----------|-----------|
-| HTML5 | Семантическая разметка |
-| CSS3 | Стилизация, Grid, Flexbox, анимации |
-| Vanilla JavaScript | Навигация, поиск, интерактивность |
-| Google Fonts | Inter + Fira Code |
+    🎓 Обучающим — можно читать исходный код и учиться
 
----
+    🔧 Простым в поддержке — не нужно обновлять зависимости
 
-## 📁 Структура файлов
+Технология	Назначение
+HTML5	Семантическая разметка
+CSS3	Стилизация, Grid, Flexbox, анимации
+Vanilla JavaScript	Навигация, поиск, интерактивность
+Google Fonts	Inter + Fira Code
+📁 Структура файлов
+text
 
-```
-webcode-art/
+WebCoding_Base/
 ├── index.html          # Основной файл со всеми разделами
-├── logo.png            # Логотип (опционально)
-└── README.md           # Этот файл
-```
+├── README.md           # Этот файл
+└── logo.png            # Логотип (опционально)
 
-> 💡 Если файла `logo.png` нет — логотип автоматически скрывается (обработчик `onerror`).
+    💡 Если файла logo.png нет — логотип автоматически скрывается (обработчик onerror).
 
----
-
-## 🔍 Как пользоваться поиском
+🔍 Как пользоваться поиском
 
 Введите в строку поиска вверху любую тему:
 
-- `Flexbox` → переключит на §2 (HTML & CSS)
-- `React` → переключит на §4 (Фреймворки)
-- `SQL` → переключит на §6 (Базы данных)
-- `Figma` → переключит на §9 (Figma)
-- `XSS` → переключит на §13 (Безопасность)
+    Flexbox → переключит на §2 (HTML & CSS)
 
-Поиск ищет по **заголовкам**, **описаниям** и **названиям разделов**.
+    React → переключит на §4 (Фреймворки)
 
----
+    SQL → переключит на §6 (Базы данных)
 
-## 🎨 Кастомизация
+    Figma → переключит на §9 (Figma)
 
-Все цвета и размеры вынесены в CSS-переменные в `:root`. Чтобы изменить тему, отредактируйте:
+    XSS → переключит на §13 (Безопасность)
 
-```css
+Поиск ищет по заголовкам, описаниям и названиям разделов.
+🎨 Кастомизация
+
+Все цвета и размеры вынесены в CSS-переменные в :root. Чтобы изменить тему, отредактируйте:
+css
+
 :root {
     --bg: #000000;              /* Фон */
     --bg-surface: #0a0a0a;      /* Фон карточек */
@@ -142,73 +142,33 @@ webcode-art/
     --accent-glow: rgba(0, 51, 255, 0.4);  /* Свечение */
     --border: #1e1e1e;          /* Границы */
 }
-```
 
-Например, чтобы сделать **зелёную тему**:
-
-```css
---accent: #00ff88;
---accent-glow: rgba(0, 255, 136, 0.4);
-```
-
----
-
-## 🤝 Как внести вклад
+🤝 Как внести вклад
 
 Проект открыт для улучшений! Если вы нашли ошибку или хотите добавить раздел:
 
-1. **Fork** репозитория
-2. Создайте ветку: `git checkout -b feature/new-section`
-3. Внесите изменения
-4. Закоммитьте: `git commit -m "Добавил раздел про Docker"`
-5. Запушьте: `git push origin feature/new-section`
-6. Откройте **Pull Request**
+    Fork репозитория
 
-### Идеи для улучшения
+    Создайте ветку: git checkout -b feature/new-section
 
-- [ ] Добавить раздел про **Docker и контейнеризацию**
-- [ ] Добавить раздел про **TypeScript**
-- [ ] Добавить раздел про **тестирование** (Jest, Vitest, Playwright)
-- [ ] Добавить раздел про **WebSocket и real-time**
-- [ ] Добавить **прогресс-бар** прочтения
-- [ ] Добавить **светлую тему** (переключатель)
-- [ ] Добавить **сохранение прогресса** в `localStorage`
-- [ ] Добавить **кнопку "Копировать"** для блоков кода
-- [ ] Добавить **PWA-манифест** для офлайн-доступа
-- [ ] Перевести на **английский язык**
+    Внесите изменения
 
----
+    Закоммитьте: git commit -m "Добавил раздел про Docker"
 
-## 👤 Авторы
+    Запушьте: git push origin feature/new-section
 
-| Роль | Имя | Ссылка |
-|------|-----|--------|
-| Создатель | A.R.T | — |
-| GitHub | OBLADAET-ru | [@OBLADAET-ru](https://github.com/OBLADAET-ru) |
+    Откройте Pull Request
 
----
+👤 Авторы
+Роль	Имя	Ссылка
+Создатель	Платонов Виктор А.	—
+GitHub	OBLADAET-ru	@OBLADAET-ru
+📄 Лицензия
 
-## 📄 Лицензия
-
-Проект распространяется под лицензией **MIT**. Вы можете свободно использовать, изменять и распространять код с указанием авторства.
-
----
-
-## ⭐ Поддержка
-
-Если проект оказался полезным:
-
-- ⭐ Поставьте **звезду** на GitHub
-- 🐛 Сообщите о **баге** через Issues
-- 💡 Предложите **идею** через Discussions
-- 🔗 Поделитесь ссылкой с друзьями-разработчиками
-
----
-
+Проект распространяется под лицензией MIT. Вы можете свободно использовать, изменять и распространять код с указанием авторства.
 <div align="center">
 
-**WEBCODE x ART** — учись, создавай, делись.
+WEBCODE x ART — учись, создавай, делись.
 
 Сделано с ❤️ для сообщества разработчиков.
-
-</div>
+</div> ```
